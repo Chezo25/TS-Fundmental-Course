@@ -1,17 +1,12 @@
-type Group = number | string;
-
-function add(
-    input1: number | string, 
-    input2: number | string, 
-    converationResults: 'as-number'| 'as-text'
-){
-    let result;
-    if (typeof +input1 === 'number' && input2 === 'string') {
-        result = input1 + input2;
+function sum(
+    n1: number,
+    n2: number,) {
+        return n1 + n2;
     }
-    
-    return result;
-}
 
 
+    function printResults( num: number) {
+        console.log('print:' + num);
+    }
 
+    printResults(sum(15, 50));
