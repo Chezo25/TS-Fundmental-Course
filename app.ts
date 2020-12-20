@@ -1,4 +1,9 @@
-const person = {
+
+enum Role {ADMIN, READ_ONLY, AUTHORS};
+
+
+const person: {} = {
     name: 'fed',
-    age: 20
+    age: 20,
+    hobbies: ['sports','cooking']
 };
