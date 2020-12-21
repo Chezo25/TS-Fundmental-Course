@@ -1,9 +1,12 @@
 
-interface Point {
-    x: number,
-    y: number
-    draw: () => unknown;
-}
+class Point {
+    x: number;
+    y: number;
+
+    draw() {
+        //...
+    }
+    }
 
 let userInput: unknown;
 
@@ -13,11 +16,8 @@ function generateError(message: string, code: number) {
 
 generateError('an error of', 250);
 
-let drawPoint = (point: Point) => {
-    // ...
-}
 
-drawPoint({
-    x: 5,
-    y:2
-})
+let point = new Point();
+point.x = 5;
+point.y = 10;
+point.draw();
