@@ -1,12 +1,17 @@
 
 class Point {
-    x: number;
+    private x: number;
     y: number;
 
+    constructor(x: number, y: number) {
+        this.x = x;
+        this.y = y;
+    }
     draw() {
         //...
     }
-    }
+    
+}
 
 let userInput: unknown;
 
@@ -17,7 +22,5 @@ function generateError(message: string, code: number) {
 generateError('an error of', 250);
 
 
-let point = new Point();
-point.x = 5;
-point.y = 10;
+let point = new Point(5, 10);
 point.draw();
